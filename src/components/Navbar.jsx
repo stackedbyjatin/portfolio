@@ -8,6 +8,11 @@ export default function Navbar() {
           <a href="#about">About</a>
           <a href="#projects">Projects</a>
           <a href="#contact">Contact</a>
+          <a href="/Jatin-Sharma-Resume.pdf"
+            download
+            className="text-cyan-400">
+                    Resume
+          </a>
         </div>
       </div>
     </nav>

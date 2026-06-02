@@ -34,9 +34,19 @@ export default function Hero() {
           websites using React, JavaScript and Tailwind CSS.
         </p>
 
-        <button className="mt-8 bg-cyan-400 text-black px-8 py-3 rounded-xl font-semibold hover:scale-105 transition">
-          View Projects
-        </button>
+        <div className="mt-8 flex gap-4">
+            <button className="bg-cyan-400 text-black px-8 py-3 rounded-xl font-semibold hover:scale-105 transition">
+            View Projects
+            </button>
+
+            <a
+            href="/Jatin-Sharma-Resume.pdf"
+            download
+            className="border border-cyan-400 px-8 py-3 rounded-xl hover:bg-cyan-400 hover:text-black transition"
+            >
+            Resume
+            </a>
+        </div>
       </motion.div>
 
       {/* Right Side */}
