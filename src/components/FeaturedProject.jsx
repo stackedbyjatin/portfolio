@@ -23,6 +23,7 @@ export default function FeaturedProject() {
 
           {/* Project Details */}
           <div>
+
             <h3 className="text-4xl font-bold mb-4">
               EzVeggies
             </h3>
@@ -34,6 +35,31 @@ export default function FeaturedProject() {
               address management, order processing and Razorpay
               payment gateway integration.
             </p>
+
+            {/* Project Info */}
+            <div className="grid grid-cols-2 gap-4 mb-8">
+
+              <div className="bg-black/30 p-4 rounded-xl border border-zinc-800">
+                <p className="text-gray-500 text-sm">Role</p>
+                <p className="font-semibold">Full Stack Developer</p>
+              </div>
+
+              <div className="bg-black/30 p-4 rounded-xl border border-zinc-800">
+                <p className="text-gray-500 text-sm">Database</p>
+                <p className="font-semibold">SQLite</p>
+              </div>
+
+              <div className="bg-black/30 p-4 rounded-xl border border-zinc-800">
+                <p className="text-gray-500 text-sm">Backend</p>
+                <p className="font-semibold">Django</p>
+              </div>
+
+              <div className="bg-black/30 p-4 rounded-xl border border-zinc-800">
+                <p className="text-gray-500 text-sm">Payment</p>
+                <p className="font-semibold">Razorpay</p>
+              </div>
+
+            </div>
 
             {/* Tech Stack */}
             <div className="flex flex-wrap gap-3 mb-8">
@@ -74,23 +100,30 @@ export default function FeaturedProject() {
               <li>✓ Order Checkout & Order Processing</li>
             </ul>
 
+            {/* Highlights */}
+            <div className="mb-8">
+              <h4 className="text-xl font-semibold mb-4">
+                Key Highlights
+              </h4>
+
+              <ul className="space-y-2 text-gray-400">
+                <li>• Secure user authentication system</li>
+                <li>• Real payment workflow using Razorpay</li>
+                <li>• Complete shopping cart functionality</li>
+                <li>• Address management and checkout process</li>
+              </ul>
+            </div>
+
             {/* Buttons */}
             <div className="flex gap-4">
-
-              <a
-                href="#"
-                className="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"
-              >
-                Live Demo
-              </a>
 
               <a
                 href="https://github.com/stackedbyjatin/EzVeggies"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="border border-cyan-400 px-6 py-3 rounded-xl hover:bg-cyan-400 hover:text-black transition"
+                className="bg-cyan-400 text-black px-6 py-3 rounded-xl font-semibold hover:scale-105 transition"
               >
-                GitHub
+                Source Code
               </a>
 
             </div>
