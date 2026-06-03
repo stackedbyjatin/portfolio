@@ -1,4 +1,4 @@
-export default function Projects() {
+export default function Project() {
  const projects = [
   {
     title: "E-Commerce Platform",
