@@ -15,33 +15,35 @@ export default function Footer() {
 
         <div className="flex flex-wrap gap-6 mb-8">
 
-          <a
-            href="https://github.com/stackedbyjatin"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            <FaGithub />
-            GitHub
-          </a>
+  <a
+    href="https://github.com/stackedbyjatin"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 hover:text-cyan-400 transition"
+  >
+    <FaGithub />
+    GitHub
+  </a>
 
-          <a
-            href="https://www.linkedin.com/in/jatin-sharma-428686411/"
-            target="_blank"
-            rel="noopener noreferrer"
-            className="hover:text-cyan-400 transition"
-          >
-            LinkedIn
-          </a>
+  <a
+    href="https://www.linkedin.com/in/jatin-sharma-428686411/"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 hover:text-cyan-400 transition"
+  >
+    <FaLinkedin />
+    LinkedIn
+  </a>
 
-          <a
-            href="mailto:stackedbyjatin@gmail.com"
-            className="hover:text-cyan-400 transition"
-          >
-            EmailS
-          </a>
+  <a
+    href="mailto:stackedbyjatinS@gmail.com"
+    className="flex items-center gap-2 hover:text-cyan-400 transition"
+  >
+    <FaEnvelope />
+    Email
+  </a>
 
-        </div>
+</div>
 
         <p className="text-gray-600 text-sm">
           © 2025 Jatin Sharma. All rights reserved.
