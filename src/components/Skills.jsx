@@ -1,3 +1,4 @@
+import { motion } from "framer-motion";
 import {
   FaHtml5,
   FaCss3Alt,
@@ -29,9 +30,14 @@ export default function Skills() {
   ];
 
   return (
-    <section
-      id="skills"
+    <motion.section
+    id="skills"
       className="max-w-7xl mx-auto px-6 md:px-12 py-24 md:py-32"
+      initial={{ opacity: 0, y: 60 }}
+      whileInView={{ opacity: 1, y: 0 }}
+      viewport={{ once: true }}
+      transition={{ duration: 0.8 }}
+      
     >
       <p className="text-cyan-400 mb-4">
         03
@@ -48,10 +54,18 @@ export default function Skills() {
 
       <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
 
-        {skills.map((skill) => (
-          <div
+       {skills.map((skill, index) => (
+  <motion.div
+    key={skill.name}
+    initial={{ opacity: 0, y: 30 }}
+    whileInView={{ opacity: 1, y: 0 }}
+    viewport={{ once: true }}
+    transition={{
+      duration: 0.4,
+      delay: index * 0.1,
+    }}
             key={skill.name}
-            className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 transition duration-300"
+            className="bg-zinc-900 border border-zinc-800 rounded-2xl p-6 hover:border-cyan-400 hover:-translate-y-2 hover:shadow-xl hover:shadow-cyan-500/10 transition duration-300"
           >
             <div className="mb-4 text-cyan-400">
               {skill.icon}
@@ -60,10 +74,10 @@ export default function Skills() {
             <h3 className="font-semibold text-lg">
               {skill.name}
             </h3>
-          </div>
+          </motion.div>
         ))}
 
       </div>
-    </section>
+    </motion.section>
   );
 }

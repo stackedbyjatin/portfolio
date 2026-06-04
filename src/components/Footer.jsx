@@ -36,7 +36,7 @@ export default function Footer() {
   </a>
 
   <a
-    href="mailto:stackedbyjatinS@gmail.com"
+    href="mailto:stackedbyjatin@gmail.com"
     className="flex items-center gap-2 hover:text-cyan-400 transition"
   >
     <FaEnvelope />

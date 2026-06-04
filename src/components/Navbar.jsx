@@ -12,14 +12,14 @@ export default function Navbar() {
 
           <a
             href="#about"
-            className="hover:text-cyan-400 transition"
+            className="hover:text-cyan-400 transition duration-300 hover:-translate-y-1"
           >
             About
           </a>
 
           <a
             href="#projects"
-            className="hover:text-cyan-400 transition"
+            className="hover:text-cyan-400 transition duration-300 hover:-translate-y-1"
           >
             Projects
           </a>
@@ -34,7 +34,7 @@ export default function Navbar() {
           <a
             href="/Jatin-Sharma-Resume.pdf"
             download
-            className="text-cyan-400 hover:text-white transition"
+            className="hover:text-cyan-400 transition duration-300 hover:-translate-y-1"
           >
             Resume
           </a>
