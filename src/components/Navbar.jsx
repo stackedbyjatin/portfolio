@@ -32,9 +32,10 @@ export default function Navbar() {
           </a>
 
           <a
-            href="/Jatin-Sharma-Resume.pdf"
-            download
-            className="hover:text-cyan-400 transition duration-300 hover:-translate-y-1"
+            href="/Jatin Sharma Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-cyan-400 hover:text-cyan-300 transition"
           >
             Resume
           </a>

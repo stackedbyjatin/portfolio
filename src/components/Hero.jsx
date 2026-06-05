@@ -88,9 +88,10 @@ export default function Hero() {
             LinkedIn
           </a>
 
-          <a
-            href="/Jatin-Sharma-Resume.pdf"
-            download
+         <a
+            href="/Jatin Sharma Resume.pdf"
+            target="_blank"
+            rel="noopener noreferrer"
             className="border border-cyan-400 px-8 py-3 rounded-xl hover:bg-cyan-400 hover:text-black transition"
           >
             Resume
