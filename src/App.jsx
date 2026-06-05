@@ -6,16 +6,17 @@ import Project from "./components/Project";
 import Skills from "./components/Skills";
 import Contact from "./components/Contact";
 import Footer from "./components/Footer";
+import VisualShowcase from "./components/VisualShowcase";
 
 function App() {
   return (
     <main className="bg-black text-white">
       <Navbar />
       <Hero />
-      <FeaturedProject />
+      <VisualShowcase />
       <About />
+      <FeaturedProject />
       <Project />
-      
       <Skills />
       <Contact />
       <Footer />

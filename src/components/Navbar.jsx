@@ -5,28 +5,28 @@ export default function Navbar() {
       <div className="max-w-7xl mx-auto px-4 md:px-8 py-5 flex justify-between items-center">
 
         <h1 className="font-black text-xl md:text-2xl tracking-wide">
-          JATIN
+          PORTFOLIO
         </h1>
 
         <div className="flex gap-3 md:gap-8 text-[11px] md:text-base">
 
           <a
             href="#about"
-            className="hover:text-cyan-400 transition duration-300 hover:-translate-y-1"
+            className="hover:text-cyan-400 transition duration-300"
           >
             About
           </a>
 
           <a
             href="#projects"
-            className="hover:text-cyan-400 transition duration-300 hover:-translate-y-1"
+            className="hover:text-cyan-400 transition duration-300"
           >
             Projects
           </a>
 
           <a
             href="#contact"
-            className="hover:text-cyan-400 transition"
+            className="hover:text-cyan-400 transition duration-300"
           >
             Contact
           </a>

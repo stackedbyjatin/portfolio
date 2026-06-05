@@ -118,14 +118,91 @@ export default function Hero() {
     },
   }}
 >
-  {/* Glow */}
-  <div className="absolute inset-0 bg-cyan-500/30 blur-[100px] rounded-full"></div>
 
+  {/* Glow */}
+  <motion.div
+    className="absolute inset-0 bg-cyan-500/20 blur-[120px] rounded-full"
+    animate={{
+      scale: [1, 1.2, 1],
+      opacity: [0.3, 0.6, 0.3],
+    }}
+    transition={{
+      duration: 5,
+      repeat: Infinity,
+      ease: "easeInOut",
+    }}
+  />
+
+ {/* Orbiting Tech Stack */}
+
+{/* React */}
+<motion.div
+  className="absolute -top-4 left-0 px-3 py-2 bg-zinc-900 border border-cyan-500/20 rounded-full text-cyan-400 text-xs md:text-sm hover:scale-110 transition duration-300"
+  animate={{ y: [0, -10, 0] }}
+  transition={{
+    duration: 4,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  React
+</motion.div>
+{/* Tailwind */}
+<motion.div
+  className="absolute top-[38%] -left-12 md:-left-16 px-3 py-2 bg-zinc-900 border border-cyan-500/20 rounded-full text-cyan-400 text-xs md:text-sm hover:scale-110 transition duration-300"
+  animate={{ y: [0, -9, 0] }}
+  transition={{
+    duration: 5.2,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  Tailwind
+</motion.div>
+
+{/* Django */}
+<motion.div
+  className="absolute top-20 -right-2 md:-right-6 px-3 py-2 bg-zinc-900 border border-cyan-500/20 rounded-full text-cyan-400 text-xs md:text-sm hover:scale-110 transition duration-300"
+  animate={{ y: [0, -12, 0] }}
+  transition={{
+    duration: 5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  Django
+</motion.div>
+
+{/* Python */}
+<motion.div
+  className="absolute bottom-20 -left-2 md:-left-6 px-3 py-2 bg-zinc-900 border border-cyan-500/20 rounded-full text-cyan-400 text-xs md:text-sm hover:scale-110 transition duration-300"
+  animate={{ y: [0, -8, 0] }}
+  transition={{
+    duration: 4.5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  Python
+</motion.div>
+
+{/* GitHub */}
+<motion.div
+  className="absolute bottom-0 right-0 px-3 py-2 bg-zinc-900 border border-cyan-500/20 rounded-full text-cyan-400 text-xs md:text-sm hover:scale-110 transition duration-300"
+  animate={{ y: [0, -14, 0] }}
+  transition={{
+    duration: 5.5,
+    repeat: Infinity,
+    ease: "easeInOut",
+  }}
+>
+  GitHub
+</motion.div>
   {/* Image */}
   <motion.img
     src={profile}
     alt="Profile"
-    className="relative w-52 md:w-[420px] mx-auto hover:scale-105 transition duration-300"
+    className="relative w-52 md:w-[420px] mx-auto hover:scale-105 transition duration-300 hover:scale-110 transition duration-300"
     whileHover={{
   scale: 1.03,
 }}
